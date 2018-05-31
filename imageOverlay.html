@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>imageFade</title>
+	<style type="text/css">
+		.mainBox{
+			width: 500px;
+			height: 400px;
+			position: relative;
+		}
+		.image{
+			display:block;
+			width: 100%;
+			height: auto;
+		}
+		.overlay{
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left:0;
+			right: 0;
+			height: 100%;
+			width: 100%;
+			opacity: 0;
+			transition: 5 ease;
+
+		}
+		.mainBox :hover .overlay{
+			opacity: 1;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="mainBox">
+		<img src="windows 8/bg-10.jpg" width="450" height="350">
+		<div class="overlay">
+			<img src="windows 8/bg-11.jpg" class="image" width="450" height="350">
+		</div>
+		
+	</div>
+</body>
+</html>

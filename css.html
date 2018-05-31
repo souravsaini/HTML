@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS</title>
+	<style>
+	ul{
+		border: 1px solid black;
+		list-style-type: none;
+		padding: 20px;
+	}
+	li{
+		height:80px;
+		width: 200px;
+		border: 1px solid black;
+		text-align: center;
+		line-height: 5;
+	    display: inline-block; 
+		margin: 3px;
+	}
+	li:last-child{
+		float:right;
+	}
+	li:before{
+		content:"\2026";
+		float:left;
+	}
+	li:after{
+		content:"\2026";
+		float:right;
+	}
+	li:hover{
+		background-color: black;
+		color:white;
+	}
+	li:hover:before{
+		color:red;
+	}
+	li:hover:after{
+		color:blue;
+	}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>Home</li>
+		<li>Gallery</li>
+		<li>Photos</li>
+		<li>About</li>
+	</ul>	
+</body>
+</html>

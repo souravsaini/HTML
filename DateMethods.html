@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+	<script>
+	var d=new Date();          //new date object with the current date and time
+	document.write(d+"<br>");
+	var d1=new Date("October 13, 2014 11:13:00");  //creates a new date object from the specified date and time
+	document.write(d1+"<br>");
+	var d2=new Date(99, 5, 24, 11, 33, 30, 0); //The 7 numbers specify the year, month, day, hour, minute, second, and millisecond
+	document.write(d2+"<br>");
+	var d3=new Date(17,0,24);  //Parameters can be variant
+	document.write(d3+"<br>");
+	document.write(d.getTime()+"<br>"); //The getTime() function returns the number of milliseconds since then
+    document.write(d.getFullYear()+"<br>");	//returns the full year of a date
+    document.write(d.getDay()+"<br>");      //Get the weekday as a number (0-6)
+    document.write(d.getHours()+"<br>"); //Get the hour (0-23)
+    document.write(d.getMilliseconds()+"<br>"); //Get the milliseconds (0-999)
+    document.write(d.getMinutes()+"<br>"); //Get the minutes (0-59)
+    document.write(d.getMonth()+"<br>"); //Get the month (0-11)
+    document.write(d.getSeconds()+"<br>"); //Get the seconds (0-59)
+    document.write(d.setFullYear(2020, 0, 14)+"<br>");
+    
+
+	</script>
+</head>
+<body>
+</body>
+</html>	
